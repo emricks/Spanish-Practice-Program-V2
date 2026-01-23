@@ -3,6 +3,7 @@ package com.enkycode;
 import com.enkycode.config.ConfigLoader;
 import com.enkycode.config.JSONConfigLoader;
 import com.enkycode.constants.Tense;
+import com.enkycode.constants.ListNames;
 import com.enkycode.words.Verb;
 
 import java.util.*;
@@ -12,26 +13,22 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
         ConfigLoader configLoader = new JSONConfigLoader();
         Scanner input = new Scanner(System.in);
-        List<Verb> verbList;
+
+        ListNames listName;
         while (true) {
             System.out.println("What list?");
-            System.out.println("Common 20");
-            System.out.println("Common 40");
-            String listType = input.nextLine();
-            verbList = switch (listType) {
-                case "Common 20" -> configLoader.getVerbs("configFiles/verbsC20.json");
-                case "Common 40" -> configLoader.getVerbs("configFiles/verbsC20.json", "configFiles/verbsC40.json");
-                default -> null;
-            };
-            if (verbList == null) {
-                System.out.println();
-                System.out.println("Invalid list type, please try again");
-                System.out.println();
-            } else {
+            for (ListNames l : ListNames.values()) {
+                System.out.println(l.toSentenceForm());
+            }
+            try {
+                listName = ListNames.valueOf(toListEnumForm(input.nextLine()));
                 break;
+            } catch (IllegalArgumentException e) {
+                System.out.println("Invalid list, please try again");
             }
         }
         Tense tense;
+
         while (true) {
             System.out.println("What tense?");
             for (Tense t : Tense.values()) {
@@ -45,7 +42,13 @@ public class Main {
             }
         }
 
-
+        List<Verb> verbList = configLoader.getVerbs(switch (listName) {
+            case COMMON20 -> "configFiles/verbsC20.json";
+            case COMMON40 -> new String[]{"configFiles/verbsC20.json", "configFiles/verbsC40.json"};
+            case COMMON60 -> new String[]{"configFiles/verbsC20.json", "configFiles/verbsC40.json", "configFiles/verbsC60.json"};
+            case COMMON80 -> new String[]{"configFiles/verbsC20.json", "configFiles/verbsC40.json", "configFiles/verbsC60.json", "configFiles/verbsC80.json"};
+            case COMMON100 -> new String[]{"configFiles/verbsC20.json", "configFiles/verbsC40.json", "configFiles/verbsC60.json", "configFiles/verbsC80.json", "configFiles/verbsC100.json"};
+        });
 
         System.out.println("How many verbs?");
         int counter = input.nextInt();
@@ -113,6 +116,10 @@ public class Main {
         } else {
             System.out.println("How did you do so badly that you got a negative score?");
         }
+    }
+
+    private static String toListEnumForm(String s) {
+        return s.substring(0, 6).toUpperCase() + s.substring(7);
     }
 
     public static String[] getQuestion(Verb verb, Tense tense) {

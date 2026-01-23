@@ -1,0 +1,162 @@
+[
+  {
+    "word": "entrar",
+    "presentConjugations": ["entro", "entras", "entra", "entramos", "entráis", "entran"],
+    "preteriteConjugations": ["entré", "entraste", "entró", "entramos", "entrasteis", "entraron"],
+    "imperfectConjugations": ["entraba", "entrabas", "entraba", "entrábamos", "entrabais", "entraban"],
+    "futureConjugations": ["entraré", "entrarás", "entrará", "entraremos", "entraréis", "entrarán"],
+    "conditionalConjugations": ["entraría", "entrarías", "entraría", "entraríamos", "entraríais", "entrarían"]
+  },
+  {
+    "word": "trabajar",
+    "presentConjugations": ["trabajo", "trabajas", "trabaja", "trabajamos", "trabajáis", "trabajan"],
+    "preteriteConjugations": ["trabajé", "trabajaste", "trabajó", "trabajamos", "trabajasteis", "trabajaron"],
+    "imperfectConjugations": ["trabajaba", "trabajabas", "trabajaba", "trabajábamos", "trabajabais", "trabajaban"],
+    "futureConjugations": ["trabajaré", "trabajarás", "trabajará", "trabajaremos", "trabajaréis", "trabajarán"],
+    "conditionalConjugations": ["trabajaría", "trabajarías", "trabajaría", "trabajaríamos", "trabajaríais", "trabajarían"]
+  },
+  {
+    "word": "escribir",
+    "presentConjugations": ["escribo", "escribes", "escribe", "escribimos", "escribís", "escriben"],
+    "preteriteConjugations": ["escribí", "escribiste", "escribió", "escribimos", "escribisteis", "escribieron"],
+    "imperfectConjugations": ["escribía", "escribías", "escribía", "escribíamos", "escribíais", "escribían"],
+    "futureConjugations": ["escribiré", "escribirás", "escribirá", "escribiremos", "escribiréis", "escribirán"],
+    "conditionalConjugations": ["escribiría", "escribirías", "escribiría", "escribiríamos", "escribiríais", "escribirían"]
+  },
+  {
+    "word": "perder",
+    "presentConjugations": ["pierdo", "pierdes", "pierde", "perdemos", "perdéis", "pierden"],
+    "preteriteConjugations": ["perdí", "perdiste", "perdió", "perdimos", "perdisteis", "perdieron"],
+    "imperfectConjugations": ["perdía", "perdías", "perdía", "perdíamos", "perdíais", "perdían"],
+    "futureConjugations": ["perderé", "perderás", "perderá", "perderemos", "perderéis", "perderán"],
+    "conditionalConjugations": ["perdería", "perderías", "perdería", "perderíamos", "perderíais", "perderían"]
+  },
+  {
+    "word": "producir",
+    "presentConjugations": ["produzco", "produces", "produce", "producimos", "producís", "producen"],
+    "preteriteConjugations": ["produje", "produjiste", "produjo", "produjimos", "produjisteis", "produjeron"],
+    "imperfectConjugations": ["producía", "producías", "producía", "producíamos", "producíais", "producían"],
+    "futureConjugations": ["produciré", "producirás", "producirá", "produciremos", "produciréis", "producirán"],
+    "conditionalConjugations": ["produciría", "producirías", "produciría", "produciríamos", "produciríais", "producirían"]
+  },
+  {
+    "word": "ocurrir",
+    "presentConjugations": ["ocurro", "ocurres", "ocurre", "ocurrimos", "ocurrís", "ocurren"],
+    "preteriteConjugations": ["ocurrí", "ocurriste", "ocurrió", "ocurrimos", "ocurristeis", "ocurrieron"],
+    "imperfectConjugations": ["ocurría", "ocurrías", "ocurría", "ocurríamos", "ocurríais", "ocurrían"],
+    "futureConjugations": ["ocurriré", "ocurrirás", "ocurrirá", "ocurriremos", "ocurriréis", "ocurrirán"],
+    "conditionalConjugations": ["ocurriría", "ocurrirías", "ocurriría", "ocurriríamos", "ocurriríais", "ocurrirían"]
+  },
+  {
+    "word": "entender",
+    "presentConjugations": ["entiendo", "entiendes", "entiende", "entendemos", "entendéis", "entienden"],
+    "preteriteConjugations": ["entendí", "entendiste", "entendió", "entendimos", "entendisteis", "entendieron"],
+    "imperfectConjugations": ["entendía", "entendías", "entendía", "entendíamos", "entendíais", "entendían"],
+    "futureConjugations": ["entenderé", "entenderás", "entenderá", "entenderemos", "entenderéis", "entenderán"],
+    "conditionalConjugations": ["entendería", "entenderías", "entendería", "entenderíamos", "entenderíais", "entenderían"]
+  },
+  {
+    "word": "pedir",
+    "presentConjugations": ["pido", "pides", "pide", "pedimos", "pedís", "piden"],
+    "preteriteConjugations": ["pedí", "pediste", "pidió", "pedimos", "pedisteis", "pidieron"],
+    "imperfectConjugations": ["pedía", "pedías", "pedía", "pedíamos", "pedíais", "pedían"],
+    "futureConjugations": ["pediré", "pedirás", "pedirá", "pediremos", "pediréis", "pedirán"],
+    "conditionalConjugations": ["pediría", "pedirías", "pediría", "pediríamos", "pediríais", "pedirían"]
+  },
+  {
+    "word": "recibir",
+    "presentConjugations": ["recibo", "recibes", "recibe", "recibimos", "recibís", "reciben"],
+    "preteriteConjugations": ["recibí", "recibiste", "recibió", "recibimos", "recibisteis", "recibieron"],
+    "imperfectConjugations": ["recibía", "recibías", "recibía", "recibíamos", "recibíais", "recibían"],
+    "futureConjugations": ["recibiré", "recibirás", "recibirá", "recibiremos", "recibiréis", "recibirán"],
+    "conditionalConjugations": ["recibiría", "recibirías", "recibiría", "recibiríamos", "recibiríais", "recibirían"]
+  },
+  {
+    "word": "recordar",
+    "presentConjugations": ["recuerdo", "recuerdas", "recuerda", "recordamos", "recordáis", "recuerdan"],
+    "preteriteConjugations": ["recordé", "recordaste", "recordó", "recordamos", "recordasteis", "recordaron"],
+    "imperfectConjugations": ["recordaba", "recordabas", "recordaba", "recordábamos", "recordabais", "recordaban"],
+    "futureConjugations": ["recordaré", "recordarás", "recordará", "recordaremos", "recordaréis", "recordarán"],
+    "conditionalConjugations": ["recordaría", "recordarías", "recordaría", "recordaríamos", "recordaríais", "recordarían"]
+  },
+  {
+    "word": "terminar",
+    "presentConjugations": ["termino", "terminas", "termina", "terminamos", "termináis", "terminan"],
+    "preteriteConjugations": ["terminé", "terminaste", "terminó", "terminamos", "terminasteis", "terminaron"],
+    "imperfectConjugations": ["terminaba", "terminabas", "terminaba", "terminábamos", "terminabais", "terminaban"],
+    "futureConjugations": ["terminaré", "terminarás", "terminará", "terminaremos", "terminaréis", "terminarán"],
+    "conditionalConjugations": ["terminaría", "terminarías", "terminaría", "terminaríamos", "terminaríais", "terminarían"]
+  },
+  {
+    "word": "permitir",
+    "presentConjugations": ["permito", "permites", "permite", "permitimos", "permitís", "permiten"],
+    "preteriteConjugations": ["permití", "permitiste", "permitió", "permitimos", "permitisteis", "permitieron"],
+    "imperfectConjugations": ["permitía", "permitías", "permitía", "permitíamos", "permitíais", "permitían"],
+    "futureConjugations": ["permitiré", "permitirás", "permitirá", "permitiremos", "permitiréis", "permitirán"],
+    "conditionalConjugations": ["permitiría", "permitirías", "permitiría", "permitiríamos", "permitiríais", "permitirían"]
+  },
+  {
+    "word": "aparecer",
+    "presentConjugations": ["aparezco", "apareces", "aparece", "aparecemos", "aparecéis", "aparecen"],
+    "preteriteConjugations": ["aparecí", "apareciste", "apareció", "aparecimos", "aparecisteis", "aparecieron"],
+    "imperfectConjugations": ["aparecía", "aparecías", "aparecía", "aparecíamos", "aparecíais", "aparecían"],
+    "futureConjugations": ["apareceré", "aparecerás", "aparecerá", "apareceremos", "apareceréis", "aparecerán"],
+    "conditionalConjugations": ["aparecería", "aparecerías", "aparecería", "apareceríamos", "apareceríais", "aparecerían"]
+  },
+  {
+    "word": "conseguir",
+    "presentConjugations": ["consigo", "consigues", "consigue", "conseguimos", "conseguís", "consiguen"],
+    "preteriteConjugations": ["conseguí", "conseguiste", "consiguió", "conseguimos", "conseguisteis", "consiguieron"],
+    "imperfectConjugations": ["conseguía", "conseguías", "conseguía", "conseguíamos", "conseguíais", "conseguían"],
+    "futureConjugations": ["conseguiré", "conseguirás", "conseguirá", "conseguiremos", "conseguiréis", "conseguirán"],
+    "conditionalConjugations": ["conseguiría", "conseguirías", "conseguiría", "conseguiríamos", "conseguiríais", "conseguirían"]
+  },
+  {
+    "word": "comenzar",
+    "presentConjugations": ["comienzo", "comienzas", "comienza", "comenzamos", "comenzáis", "comienzan"],
+    "preteriteConjugations": ["comencé", "comenzaste", "comenzó", "comenzamos", "comenzasteis", "comenzaron"],
+    "imperfectConjugations": ["comenzaba", "comenzabas", "comenzaba", "comenzábamos", "comenzabais", "comenzaban"],
+    "futureConjugations": ["comenzaré", "comenzarás", "comenzará", "comenzaremos", "comenzaréis", "comenzarán"],
+    "conditionalConjugations": ["comenzaría", "comenzarías", "comenzaría", "comenzaríamos", "comenzaríais", "comenzarían"]
+  },
+  {
+    "word": "servir",
+    "presentConjugations": ["sirvo", "sirves", "sirve", "servimos", "servís", "sirven"],
+    "preteriteConjugations": ["serví", "serviste", "sirvió", "servimos", "servisteis", "sirvieron"],
+    "imperfectConjugations": ["servía", "servías", "servía", "servíamos", "servíais", "servían"],
+    "futureConjugations": ["serviré", "servirás", "servirá", "serviremos", "serviréis", "servirán"],
+    "conditionalConjugations": ["serviría", "servirías", "serviría", "serviríamos", "serviríais", "servirían"]
+  },
+  {
+    "word": "sacar",
+    "presentConjugations": ["saco", "sacas", "saca", "sacamos", "sacáis", "sacan"],
+    "preteriteConjugations": ["saqué", "sacaste", "sacó", "sacamos", "sacasteis", "sacaron"],
+    "imperfectConjugations": ["sacaba", "sacabas", "sacaba", "sacábamos", "sacabais", "sacaban"],
+    "futureConjugations": ["sacaré", "sacarás", "sacará", "sacaremos", "sacaréis", "sacarán"],
+    "conditionalConjugations": ["sacaría", "sacarías", "sacaría", "sacaríamos", "sacaríais", "sacarían"]
+  },
+  {
+    "word": "necesitar",
+    "presentConjugations": ["necesito", "necesitas", "necesita", "necesitamos", "necesitáis", "necesitan"],
+    "preteriteConjugations": ["necesité", "necesitaste", "necesitó", "necesitamos", "necesitasteis", "necesitaron"],
+    "imperfectConjugations": ["necesitaba", "necesitabas", "necesitaba", "necesitábamos", "necesitabais", "necesitaban"],
+    "futureConjugations": ["necesitaré", "necesitarás", "necesitará", "necesitaremos", "necesitaréis", "necesitarán"],
+    "conditionalConjugations": ["necesitaría", "necesitarías", "necesitaría", "necesitaríamos", "necesitaríais", "necesitarían"]
+  },
+  {
+    "word": "mantener",
+    "presentConjugations": ["mantengo", "mantienes", "mantiene", "mantenemos", "mantenéis", "mantienen"],
+    "preteriteConjugations": ["mantuve", "mantuviste", "mantuvo", "mantuvimos", "mantuvisteis", "mantuvieron"],
+    "imperfectConjugations": ["mantenía", "mantenías", "mantenía", "manteníamos", "manteníais", "mantenían"],
+    "futureConjugations": ["mantendré", "mantendrás", "mantendrá", "mantendremos", "mantendréis", "mantendrán"],
+    "conditionalConjugations": ["mantendría", "mantendrías", "mantendría", "mantendríamos", "mantendríais", "mantendrían"]
+  },
+  {
+    "word": "resultar",
+    "presentConjugations": ["resulto", "resultas", "resulta", "resultamos", "resultáis", "resultan"],
+    "preteriteConjugations": ["resulté", "resultaste", "resultó", "resultamos", "resultasteis", "resultaron"],
+    "imperfectConjugations": ["resultaba", "resultabas", "resultaba", "resultábamos", "resultabais", "resultaban"],
+    "futureConjugations": ["resultaré", "resultarás", "resultará", "resultaremos", "resultaréis", "resultarán"],
+    "conditionalConjugations": ["resultaría", "resultarías", "resultaría", "resultaríamos", "resultaríais", "resultarían"]
+  }
+]
