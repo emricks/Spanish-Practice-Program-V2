@@ -1,30 +1,15 @@
 package com.enkycode.words;
 
 public class Verb extends Word {
-    private final String presentConjugationCode;
-    private final String preteriteConjugationCode;
-    private final String imperfectConjugationCode;
     private String[] presentConjugations;
     private String[] preteriteConjugations;
     private String[] imperfectConjugations;
+    private String[] futureConjugations;
+    private String[] conditionalConjugations;
 
-    public Verb(String word, String presentCC, String preteriteCC, String imperfectCC) {
+    public Verb(String word) {
         super(word);
-        presentConjugationCode = presentCC;
-        preteriteConjugationCode = preteriteCC;
-        imperfectConjugationCode = imperfectCC;
     }
-
-    public void setPresentConjugations(String[] conjugations) {
-        presentConjugations = conjugations;
-    }
-    public void setPreteriteConjugations(String[] conjugations) {
-        preteriteConjugations = conjugations;
-    }
-    public void setImperfectConjugations(String[] conjugations) {
-        imperfectConjugations = conjugations;
-    }
-
     public String[] getPresentConjugations() {
         return presentConjugations;
     }
@@ -34,14 +19,10 @@ public class Verb extends Word {
     public String[] getImperfectConjugations() {
         return imperfectConjugations;
     }
-
-    public String getPresentConjugationCode() {
-        return presentConjugationCode;
+    public String[] getFutureConjugations() {
+        return futureConjugations;
     }
-    public String getPreteriteConjugationCode() {
-        return preteriteConjugationCode;
-    }
-    public String getImperfectConjugationCode() {
-        return imperfectConjugationCode;
+    public String[] getConditionalConjugations() {
+        return conditionalConjugations;
     }
 }
