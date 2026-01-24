@@ -1,182 +1,162 @@
 [
   {
     "word": "ser",
-    "presentConjugations": ["soy", "eres", "es", "somos", "sois", "son"],
-    "preteriteConjugations": ["fui", "fuiste", "fue", "fuimos", "fuisteis", "fueron"],
-    "imperfectConjugations": ["era", "eras", "era", "éramos", "erais", "eran"],
-    "futureConjugations": ["seré", "serás", "será", "seremos", "seréis", "serán"],
-    "conditionalConjugations": ["sería", "serías", "sería", "seríamos", "seríais", "serían"],
-    "isIrregular": [true, true, true, false, false]
+    "presentConjugations": { "conjugations": ["soy", "eres", "es", "somos", "sois", "son"], "isIrregular": true },
+    "preteriteConjugations": { "conjugations": ["fui", "fuiste", "fue", "fuimos", "fuisteis", "fueron"], "isIrregular": true },
+    "imperfectConjugations": { "conjugations": ["era", "eras", "era", "éramos", "erais", "eran"], "isIrregular": true },
+    "futureConjugations": { "conjugations": ["seré", "serás", "será", "seremos", "seréis", "serán"], "isIrregular": false },
+    "conditionalConjugations": { "conjugations": ["sería", "serías", "sería", "seríamos", "seríais", "serían"], "isIrregular": false }
   },
   {
     "word": "haber",
-    "presentConjugations": ["he", "has", "ha", "hemos", "habéis", "han"],
-    "preteriteConjugations": ["hube", "hubiste", "hubo", "hubimos", "hubisteis", "hubieron"],
-    "imperfectConjugations": ["había", "habías", "había", "habíamos", "habíais", "habían"],
-    "futureConjugations": ["habré", "habrás", "habrá", "habremos", "habréis", "habrán"],
-    "conditionalConjugations": ["habría", "habría", "habría", "habríamos", "habríais", "habrían"],
-    "isIrregular": [true, true, false, true, true]
+    "presentConjugations": { "conjugations": ["he", "has", "ha", "hemos", "habéis", "han"], "isIrregular": true },
+    "preteriteConjugations": { "conjugations": ["hube", "hubiste", "hubo", "hubimos", "hubisteis", "hubieron"], "isIrregular": true },
+    "imperfectConjugations": { "conjugations": ["había", "habías", "había", "habíamos", "habíais", "habían"], "isIrregular": false },
+    "futureConjugations": { "conjugations": ["habré", "habrás", "habrá", "habremos", "habréis", "habrán"], "isIrregular": true },
+    "conditionalConjugations": { "conjugations": ["habría", "habrías", "habría", "habríamos", "habríais", "habrían"], "isIrregular": true }
   },
   {
     "word": "estar",
-    "presentConjugations": ["estoy", "estás", "está", "estamos", "estáis", "están"],
-    "preteriteConjugations": ["estuve", "estuviste", "estuvo", "estuvimos", "estuvisteis", "estuvieron"],
-    "imperfectConjugations": ["estaba", "estabas", "estaba", "estábamos", "estabais", "estaban"],
-    "futureConjugations": ["estaré", "estarás", "estará", "estaremos", "estaréis", "estarán"],
-    "conditionalConjugations": ["estaría", "estarías", "estaría", "estaríamos", "estaríais", "estarían"],
-    "isIrregular": [true, true, false, false, false]
+    "presentConjugations": { "conjugations": ["estoy", "estás", "está", "estamos", "estáis", "están"], "isIrregular": true },
+    "preteriteConjugations": { "conjugations": ["estuve", "estuviste", "estuvo", "estuvimos", "estuvisteis", "estuvieron"], "isIrregular": true },
+    "imperfectConjugations": { "conjugations": ["estaba", "estabas", "estaba", "estábamos", "estabais", "estaban"], "isIrregular": false },
+    "futureConjugations": { "conjugations": ["estaré", "estarás", "estará", "estaremos", "estaréis", "estarán"], "isIrregular": false },
+    "conditionalConjugations": { "conjugations": ["estaría", "estarías", "estaría", "estaríamos", "estaríais", "estarían"], "isIrregular": false }
   },
   {
     "word": "tener",
-    "presentConjugations": ["tengo", "tienes", "tiene", "tenemos", "tenéis", "tienen"],
-    "preteriteConjugations": ["tuve", "tuviste", "tuvo", "tuvimos", "tuvisteis", "tuvieron"],
-    "imperfectConjugations": ["tenía", "tenías", "tenía", "teníamos", "teníais", "tenían"],
-    "futureConjugations": ["tendré", "tendrás", "tendrá", "tendremos", "tendréis", "tendrán"],
-    "conditionalConjugations": ["tendría", "tendrías", "tendría", "tendríamos", "tendríais", "tendrían"],
-    "isIrregular": [true, true, false, true, true]
+    "presentConjugations": { "conjugations": ["tengo", "tienes", "tiene", "tenemos", "tenéis", "tienen"], "isIrregular": true },
+    "preteriteConjugations": { "conjugations": ["tuve", "tuviste", "tuvo", "tuvimos", "tuvisteis", "tuvieron"], "isIrregular": true },
+    "imperfectConjugations": { "conjugations": ["tenía", "tenías", "tenía", "teníamos", "teníais", "tenían"], "isIrregular": false },
+    "futureConjugations": { "conjugations": ["tendré", "tendrás", "tendrá", "tendremos", "tendréis", "tendrán"], "isIrregular": true },
+    "conditionalConjugations": { "conjugations": ["tendría", "tendrías", "tendría", "tendríamos", "tendríais", "tendrían"], "isIrregular": true }
   },
   {
     "word": "hacer",
-    "presentConjugations": ["hago", "haces", "hace", "hacemos", "hacéis", "hacen"],
-    "preteriteConjugations": ["hice", "hiciste", "hizo", "hicimos", "hicisteis", "hicieron"],
-    "imperfectConjugations": ["hacía", "hacías", "hacía", "hacíamos", "hacíais", "hacían"],
-    "futureConjugations": ["haré", "harás", "hará", "haremos", "haréis", "harán"],
-    "conditionalConjugations": ["haría", "harías", "haría", "haríamos", "haríais", "harían"],
-    "isIrregular": [true, true, false, true, true]
+    "presentConjugations": { "conjugations": ["hago", "haces", "hace", "hacemos", "hacéis", "hacen"], "isIrregular": true },
+    "preteriteConjugations": { "conjugations": ["hice", "hiciste", "hizo", "hicimos", "hicisteis", "hicieron"], "isIrregular": true },
+    "imperfectConjugations": { "conjugations": ["hacía", "hacías", "hacía", "hacíamos", "hacíais", "hacían"], "isIrregular": false },
+    "futureConjugations": { "conjugations": ["haré", "harás", "hará", "haremos", "haréis", "harán"], "isIrregular": true },
+    "conditionalConjugations": { "conjugations": ["haría", "harías", "haría", "haríamos", "haríais", "harían"], "isIrregular": true }
   },
   {
     "word": "poder",
-    "presentConjugations": ["puedo", "puedes", "puede", "podemos", "podéis", "pueden"],
-    "preteriteConjugations": ["pude", "pudiste", "pudo", "pudimos", "pudisteis", "pudieron"],
-    "imperfectConjugations": ["podía", "podían", "podía", "podíamos", "podíais", "podían"],
-    "futureConjugations": ["podré", "podrás", "podrá", "podremos", "podréis", "podrán"],
-    "conditionalConjugations": ["podría", "podrías", "podría", "podríamos", "podríais", "podrían"],
-    "isIrregular": [true, true, false, true, true]
+    "presentConjugations": { "conjugations": ["puedo", "puedes", "puede", "podemos", "podéis", "pueden"], "isIrregular": true },
+    "preteriteConjugations": { "conjugations": ["pude", "pudiste", "pudo", "pudimos", "pudisteis", "pudieron"], "isIrregular": true },
+    "imperfectConjugations": { "conjugations": ["podía", "podías", "podía", "podíamos", "podíais", "podían"], "isIrregular": false },
+    "futureConjugations": { "conjugations": ["podré", "podrás", "podrá", "podremos", "podréis", "podrán"], "isIrregular": true },
+    "conditionalConjugations": { "conjugations": ["podría", "podrías", "podría", "podríamos", "podríais", "podrían"], "isIrregular": true }
   },
   {
     "word": "decir",
-    "presentConjugations": ["digo", "dices", "dice", "decimos", "decís", "dicen"],
-    "preteriteConjugations": ["dije", "dijiste", "dijo", "dijimos", "dijisteis", "dijeron"],
-    "imperfectConjugations": ["decía", "decías", "decía", "decíamos", "decíais", "decían"],
-    "futureConjugations": ["diré", "dirás", "dirá", "diremos", "diréis", "dirán"],
-    "conditionalConjugations": ["diría", "dirías", "diría", "diríamos", "diríais", "dirían"],
-    "isIrregular": [true, true, false, true, true]
+    "presentConjugations": { "conjugations": ["digo", "dices", "dice", "decimos", "decís", "dicen"], "isIrregular": true },
+    "preteriteConjugations": { "conjugations": ["dije", "dijiste", "dijo", "dijimos", "dijisteis", "dijeron"], "isIrregular": true },
+    "imperfectConjugations": { "conjugations": ["decía", "decías", "decía", "decíamos", "decíais", "decían"], "isIrregular": false },
+    "futureConjugations": { "conjugations": ["diré", "dirás", "dirá", "diremos", "diréis", "dirán"], "isIrregular": true },
+    "conditionalConjugations": { "conjugations": ["diría", "dirías", "diría", "diríamos", "diríais", "dirían"], "isIrregular": true }
   },
   {
     "word": "ir",
-    "presentConjugations": ["voy", "vas", "va", "vamos", "vais", "van"],
-    "preteriteConjugations": ["fui", "fuiste", "fue", "fuimos", "fuisteis", "fueron"],
-    "imperfectConjugations": ["iba", "ibas", "iba", "íbamos", "ibais", "iban"],
-    "futureConjugations": ["iré", "irás", "irá", "iremos", "iréis", "irán"],
-    "conditionalConjugations": ["iría", "irías", "iría", "iríamos", "iríais", "irían"],
-    "isIrregular": [true, true, true, false, false]
+    "presentConjugations": { "conjugations": ["voy", "vas", "va", "vamos", "vais", "van"], "isIrregular": true },
+    "preteriteConjugations": { "conjugations": ["fui", "fuiste", "fue", "fuimos", "fuisteis", "fueron"], "isIrregular": true },
+    "imperfectConjugations": { "conjugations": ["iba", "ibas", "iba", "íbamos", "ibais", "iban"], "isIrregular": true },
+    "futureConjugations": { "conjugations": ["iré", "irás", "irá", "iremos", "iréis", "irán"], "isIrregular": false },
+    "conditionalConjugations": { "conjugations": ["iría", "irías", "iría", "iríamos", "iríais", "irían"], "isIrregular": false }
   },
   {
     "word": "ver",
-    "presentConjugations": ["veo", "ves", "ve", "vemos", "véis", "ven"],
-    "preteriteConjugations": ["vi", "viste", "vio", "vimos", "visteis", "vieron"],
-    "imperfectConjugations": ["veía", "veías", "veía", "veíamos", "veíais", "veían"],
-    "futureConjugations": ["veré", "verás", "verá", "veremos", "veréis", "verán"],
-    "conditionalConjugations": ["vería", "verías", "vería", "veríamos", "veríais", "verían"],
-    "isIrregular": [true, true, true, false, false]
+    "presentConjugations": { "conjugations": ["veo", "ves", "ve", "vemos", "veis", "ven"], "isIrregular": true },
+    "preteriteConjugations": { "conjugations": ["vi", "viste", "vio", "vimos", "visteis", "vieron"], "isIrregular": true },
+    "imperfectConjugations": { "conjugations": ["veía", "veías", "veía", "veíamos", "veíais", "veían"], "isIrregular": false },
+    "futureConjugations": { "conjugations": ["veré", "verás", "verá", "veremos", "veréis", "verán"], "isIrregular": false },
+    "conditionalConjugations": { "conjugations": ["vería", "verías", "vería", "veríamos", "veríais", "verían"], "isIrregular": false }
   },
   {
     "word": "dar",
-    "presentConjugations": ["doy", "das", "da", "damos", "dais", "dan"],
-    "preteriteConjugations": ["di", "diste", "dio", "dimos", "disteis", "dieron"],
-    "imperfectConjugations": ["daba", "dabas", "daba", "dábamos", "dabais", "daban"],
-    "futureConjugations": ["daré", "darás", "dará", "daremos", "daréis", "darán"],
-    "conditionalConjugations": ["daría", "darías", "daría", "daríamos", "daríais", "darían"],
-    "isIrregular": [true, true, false, false, false]
+    "presentConjugations": { "conjugations": ["doy", "das", "da", "damos", "dais", "dan"], "isIrregular": true },
+    "preteriteConjugations": { "conjugations": ["di", "diste", "dio", "dimos", "disteis", "dieron"], "isIrregular": true },
+    "imperfectConjugations": { "conjugations": ["daba", "dabas", "daba", "dábamos", "dabais", "daban"], "isIrregular": false },
+    "futureConjugations": { "conjugations": ["daré", "darás", "dará", "daremos", "daréis", "darán"], "isIrregular": false },
+    "conditionalConjugations": { "conjugations": ["daría", "darías", "daría", "daríamos", "daríais", "darían"], "isIrregular": false }
   },
   {
     "word": "saber",
-    "presentConjugations": ["sé", "sabes", "sabe", "sabemos", "sabéis", "saben"],
-    "preteriteConjugations": ["supe", "supiste", "supo", "supimos", "supisteis", "supieron"],
-    "imperfectConjugations": ["sabía", "sabías", "sabía", "sabíamos", "sabíais", "sabían"],
-    "futureConjugations": ["sabré", "sabrás", "sabrá", "sabremos", "sabréis", "sabrán"],
-    "conditionalConjugations": ["sabría", "sabrías", "sabría", "sabríamos", "sabríais", "sabrían"],
-    "isIrregular": [true, true, false, true, true]
+    "presentConjugations": { "conjugations": ["sé", "sabes", "sabe", "sabemos", "sabéis", "saben"], "isIrregular": true },
+    "preteriteConjugations": { "conjugations": ["supe", "supiste", "supo", "supimos", "supisteis", "supieron"], "isIrregular": true },
+    "imperfectConjugations": { "conjugations": ["sabía", "sabías", "sabía", "sabíamos", "sabíais", "sabían"], "isIrregular": false },
+    "futureConjugations": { "conjugations": ["sabré", "sabrás", "sabrá", "sabremos", "sabréis", "sabrán"], "isIrregular": true },
+    "conditionalConjugations": { "conjugations": ["sabría", "sabrías", "sabría", "sabríamos", "sabríais", "sabrían"], "isIrregular": true }
   },
   {
     "word": "querer",
-    "presentConjugations": ["quiero", "quieres", "quiere", "queremos", "queréis", "quieren"],
-    "preteriteConjugations": ["quise", "quisiste", "quiso", "quisimos", "quisisteis", "quisieron"],
-    "imperfectConjugations": ["quería", "querías", "quería", "queríamos", "queríais", "querían"],
-    "futureConjugations": ["querré", "querrás", "querrá", "querremos", "querréis", "querrán"],
-    "conditionalConjugations": ["querría", "querrías", "querría", "querríamos", "querríais", "querrían"],
-    "isIrregular": [true, true, false, true, true]
+    "presentConjugations": { "conjugations": ["quiero", "quieres", "quiere", "queremos", "queréis", "quieren"], "isIrregular": true },
+    "preteriteConjugations": { "conjugations": ["quise", "quisiste", "quiso", "quisimos", "quisisteis", "quisieron"], "isIrregular": true },
+    "imperfectConjugations": { "conjugations": ["quería", "querías", "quería", "queríamos", "queríais", "querían"], "isIrregular": false },
+    "futureConjugations": { "conjugations": ["querré", "querrás", "querrá", "querremos", "querréis", "querrán"], "isIrregular": true },
+    "conditionalConjugations": { "conjugations": ["querría", "querrías", "querría", "querríamos", "querríais", "querrían"], "isIrregular": true }
   },
   {
     "word": "llegar",
-    "presentConjugations": ["llego", "llegas", "llega", "llegamos", "llegáis", "llegan"],
-    "preteriteConjugations": ["llegué", "llegaste", "llegó", "llegamos", "llegasteis", "llegaron"],
-    "imperfectConjugations": ["llegaba", "llegabas", "llegaba", "llegábamos", "llegabais", "llegaban"],
-    "futureConjugations": ["llegaré", "llegarás", "llegará", "llegaremos", "llegaráis", "llegarán"],
-    "conditionalConjugations": ["llegaría", "llegarías", "llegaría", "llegaríamos", "llegaríais", "llegarían"],
-    "isIrregular": [false, true, false, false, false]
+    "presentConjugations": { "conjugations": ["llego", "llegas", "llega", "llegamos", "llegáis", "llegan"], "isIrregular": false },
+    "preteriteConjugations": { "conjugations": ["llegué", "llegaste", "llegó", "llegamos", "llegasteis", "llegaron"], "isIrregular": true },
+    "imperfectConjugations": { "conjugations": ["llegaba", "llegabas", "llegaba", "llegábamos", "llegabais", "llegaban"], "isIrregular": false },
+    "futureConjugations": { "conjugations": ["llegaré", "llegarás", "llegará", "llegaremos", "llegaréis", "llegarán"], "isIrregular": false },
+    "conditionalConjugations": { "conjugations": ["llegaría", "llegarías", "llegaría", "llegaríamos", "llegaríais", "llegarían"], "isIrregular": false }
   },
   {
     "word": "pasar",
-    "presentConjugations": ["paso", "pasas", "pasa", "pasamos", "pasáis", "pasan"],
-    "preteriteConjugations": ["pasé", "pasaste", "pasó", "pasamos", "pasasteis", "pasaron"],
-    "imperfectConjugations": ["pasaba", "pasabas", "pasaba", "pasábamos", "pasasteis", "pasaron"],
-    "futureConjugations": ["pasaré", "pasarás", "pasará", "pasaremos", "pasaréis", "pasarán"],
-    "conditionalConjugations": ["pasaría", "pasarías", "pasaría", "pasaríamos", "pasaríais", "pasarían"],
-    "isIrregular": [false, false, false, false, false]
+    "presentConjugations": { "conjugations": ["paso", "pasas", "pasa", "pasamos", "pasáis", "pasan"], "isIrregular": false },
+    "preteriteConjugations": { "conjugations": ["pasé", "pasaste", "pasó", "pasamos", "pasasteis", "pasaron"], "isIrregular": false },
+    "imperfectConjugations": { "conjugations": ["pasaba", "pasabas", "pasaba", "pasábamos", "pasabais", "pasaban"], "isIrregular": false },
+    "futureConjugations": { "conjugations": ["pasaré", "pasarás", "pasará", "pasaremos", "pasaréis", "pasarán"], "isIrregular": false },
+    "conditionalConjugations": { "conjugations": ["pasaría", "pasarías", "pasaría", "pasaríamos", "pasaríais", "pasarían"], "isIrregular": false }
   },
   {
     "word": "deber",
-    "presentConjugations": ["debo", "debes", "debe", "debemos", "debéis", "deben"],
-    "preteriteConjugations": ["debí", "debiste", "debó", "debimos", "debisteis", "debieron"],
-    "imperfectConjugations": ["debía", "debías", "debía", "debíamos", "debíais", "debían"],
-    "futureConjugations": ["deberé", "deberás", "deberá", "deberemos", "deberéis", "deberán"],
-    "conditionalConjugations": ["debería", "deberías", "debería", "deberíamos", "deberíais", "deberían"],
-    "isIrregular": [false, false, false, false, false]
+    "presentConjugations": { "conjugations": ["debo", "debes", "debe", "debemos", "debéis", "deben"], "isIrregular": false },
+    "preteriteConjugations": { "conjugations": ["debí", "debiste", "debió", "debimos", "debisteis", "debieron"], "isIrregular": false },
+    "imperfectConjugations": { "conjugations": ["debía", "debías", "debía", "debíamos", "debíais", "debían"], "isIrregular": false },
+    "futureConjugations": { "conjugations": ["deberé", "deberás", "deberá", "deberemos", "deberéis", "deberán"], "isIrregular": false },
+    "conditionalConjugations": { "conjugations": ["debería", "deberías", "debería", "deberíamos", "deberíais", "deberían"], "isIrregular": false }
   },
   {
     "word": "poner",
-    "presentConjugations": ["pongo", "pones", "pone", "ponemos", "ponéis", "ponen"],
-    "preteriteConjugations": ["puse", "pusiste", "puso", "pusimos", "pusisteis", "pusieron"],
-    "imperfectConjugations": ["ponía", "ponías", "ponía", "poníamos", "poníais", "ponían"],
-    "futureConjugations": ["pondré", "pondrás", "pondrá", "pondremos", "pondréis", "pondrán"],
-    "conditionalConjugations": ["pondría", "pondrías", "pondría", "pondríamos", "pondríais", "pondrían"],
-    "isIrregular": [true, true, false, true, true]
+    "presentConjugations": { "conjugations": ["pongo", "pones", "pone", "ponemos", "ponéis", "ponen"], "isIrregular": true },
+    "preteriteConjugations": { "conjugations": ["puse", "pusiste", "puso", "pusimos", "pusisteis", "pusieron"], "isIrregular": true },
+    "imperfectConjugations": { "conjugations": ["ponía", "ponías", "ponía", "poníamos", "poníais", "ponían"], "isIrregular": false },
+    "futureConjugations": { "conjugations": ["pondré", "pondrás", "pondrá", "pondremos", "pondréis", "pondrán"], "isIrregular": true },
+    "conditionalConjugations": { "conjugations": ["pondría", "pondrías", "pondría", "pondríamos", "pondríais", "pondrían"], "isIrregular": true }
   },
   {
     "word": "parecer",
-    "presentConjugations": ["parezco", "pareces", "parece", "parecemos", "parecéis", "parecen"],
-    "preteriteConjugations": ["parecí", "pareciste", "pareció", "parecimos", "parecisteis", "parecieron"],
-    "imperfectConjugations": ["parecía", "parecías", "parecía", "parecíamos", "parecíais", "parecían"],
-    "futureConjugations": ["pareceré", "parecerás", "parecerá", "pareceremos", "pareceréis", "parecerán"],
-    "conditionalConjugations": ["parecería", "parecerías", "parecería", "pareceríamos", "pareceríais", "parecerían"],
-    "isIrregular": [true, false, false, false, false]
+    "presentConjugations": { "conjugations": ["parezco", "pareces", "parece", "parecemos", "parecéis", "parecen"], "isIrregular": true },
+    "preteriteConjugations": { "conjugations": ["parecí", "pareciste", "pareció", "parecimos", "parecisteis", "parecieron"], "isIrregular": false },
+    "imperfectConjugations": { "conjugations": ["parecía", "parecías", "parecía", "parecíamos", "parecíais", "parecían"], "isIrregular": false },
+    "futureConjugations": { "conjugations": ["pareceré", "parecerás", "parecerá", "pareceremos", "pareceréis", "parecerán"], "isIrregular": false },
+    "conditionalConjugations": { "conjugations": ["parecería", "parecerías", "parecería", "pareceríamos", "pareceríais", "parecerían"], "isIrregular": false }
   },
   {
     "word": "quedar",
-    "presentConjugations": ["quedo", "quedas", "queda", "quedamos", "quedáis", "quedan"],
-    "preteriteConjugations": ["quedé", "quedaste", "quedó", "quedamos", "quedasteis", "quedaron"],
-    "imperfectConjugations": ["quedaba", "quedabas", "quedaba", "quedábamos", "quedabais", "quedaban"],
-    "futureConjugations": ["quedaré", "quedarás", "quedará", "quedaremos", "quedaréis", "quedarán"],
-    "conditionalConjugations": ["quedaría", "quedarías", "quedaría", "quedaríamos", "quedaríais", "quedarían"],
-    "isIrregular": [false, false, false, false, false]
+    "presentConjugations": { "conjugations": ["quedo", "quedas", "queda", "quedamos", "quedáis", "quedan"], "isIrregular": false },
+    "preteriteConjugations": { "conjugations": ["quedé", "quedaste", "quedó", "quedamos", "quedasteis", "quedaron"], "isIrregular": false },
+    "imperfectConjugations": { "conjugations": ["quedaba", "quedabas", "quedaba", "quedábamos", "quedabais", "quedaban"], "isIrregular": false },
+    "futureConjugations": { "conjugations": ["quedaré", "quedarás", "quedará", "quedaremos", "quedaréis", "quedarán"], "isIrregular": false },
+    "conditionalConjugations": { "conjugations": ["quedaría", "quedarías", "quedaría", "quedaríamos", "quedaríais", "quedarían"], "isIrregular": false }
   },
   {
     "word": "creer",
-    "presentConjugations": ["creo", "crees", "cree", "creemos", "creéis", "creen"],
-    "preteriteConjugations": ["creé", "creíste", "creyó", "creímos", "creísteis", "creyeron"],
-    "imperfectConjugations": ["creía", "creías", "creía", "creíamos", "creíais", "creían"],
-    "futureConjugations": ["creeré", "creerás", "creerá", "creeremos", "creeréis", "creerán"],
-    "conditionalConjugations": ["creería", "creerías", "creería", "creeríamos", "creeríais", "creerían"],
-    "isIrregular": [false, true, false, false, false]
+    "presentConjugations": { "conjugations": ["creo", "crees", "cree", "creemos", "creéis", "creen"], "isIrregular": false },
+    "preteriteConjugations": { "conjugations": ["creí", "creíste", "creyó", "creímos", "creísteis", "creyeron"], "isIrregular": true },
+    "imperfectConjugations": { "conjugations": ["creía", "creías", "creía", "creíamos", "creíais", "creían"], "isIrregular": false },
+    "futureConjugations": { "conjugations": ["creeré", "creerás", "creerá", "creeremos", "creeréis", "creerán"], "isIrregular": false },
+    "conditionalConjugations": { "conjugations": ["creería", "creerías", "creería", "creeríamos", "creeríais", "creerían"], "isIrregular": false }
   },
   {
     "word": "hablar",
-    "presentConjugations": ["hablo", "hablas", "habla", "hablamos", "habláis", "hablan"],
-    "preteriteConjugations": ["hablé", "hablaste", "habló", "hablamos", "hablasteis", "hablaron"],
-    "imperfectConjugations": ["hablaba", "hablabas", "hablaba", "hablábamos", "hablabais", "hablaban"],
-    "futureConjugations": ["hablaré", "hablarás", "hablará", "hablaremos", "hablaréis", "hablarán"],
-    "conditionalConjugations": ["hablaría", "hablarías", "hablaría", "hablaríamos", "hablaríais", "hablarían"],
-    "isIrregular": [false, false, false, false, false]
+    "presentConjugations": { "conjugations": ["hablo", "hablas", "habla", "hablamos", "habláis", "hablan"], "isIrregular": false },
+    "preteriteConjugations": { "conjugations": ["hablé", "hablaste", "habló", "hablamos", "hablasteis", "hablaron"], "isIrregular": false },
+    "imperfectConjugations": { "conjugations": ["hablaba", "hablabas", "hablaba", "hablábamos", "hablabais", "hablaban"], "isIrregular": false },
+    "futureConjugations": { "conjugations": ["hablaré", "hablarás", "hablará", "hablaremos", "hablaréis", "hablarán"], "isIrregular": false },
+    "conditionalConjugations": { "conjugations": ["hablaría", "hablarías", "hablaría", "hablaríamos", "hablaríais", "hablarían"], "isIrregular": false }
   }
 ]

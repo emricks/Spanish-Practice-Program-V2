@@ -48,15 +48,6 @@ public class Main {
             }
         }
 
-        // Assigns a number based on the tense, used for lists containing only regulars/irregulars of a certain tense.
-        int tenseNumber = switch (tense) {
-            case PRESENT -> 0;
-            case PRETERITE -> 1;
-            case IMPERFECT -> 2;
-            case FUTURE -> 3;
-            case CONDITIONAL -> 4;
-        };
-
         // Gets the list of Verb objects to use, uses different JSON files based on the list chosen previously.
         List<Verb> verbList = configLoader.getVerbs(switch (listName) {
             case COMMON20 -> new String[]{"configFiles/verbsC20.json"};
@@ -83,11 +74,11 @@ public class Main {
                 // Loops through, choosing verbs until one that matches the user's irregular/regular/both preference is chosen.
                 verb = verbList.get((int)(Math.random() * verbList.size()));
                 if (include.toUpperCase().contains("IR")) {
-                    if (verb.getIsIrregular()[tenseNumber]) {
+                    if (verb.getIsIrregular(tense)) {
                         break;
                     }
                 } else if (include.toUpperCase().contains("REG")) {
-                    if (!verb.getIsIrregular()[tenseNumber]) {
+                    if (!verb.getIsIrregular(tense)) {
                         break;
                     }
                 } else {
@@ -97,7 +88,7 @@ public class Main {
 
             // gets the pronoun, word, and correct answer for printing and input checking.
             String[] question = getQuestion(verb, tense);
-            System.out.println(question[0] + " *" + question[1] + "* (" + tense + ")");
+            System.out.println(question[0] + " *" + question[1] + "* (" + tense.toSentenceCase() + ")");
             if (input.nextLine().trim().equals(question[2])) {
                 score++;
                 System.out.println();
