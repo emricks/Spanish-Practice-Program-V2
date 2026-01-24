@@ -6,6 +6,7 @@ public class Verb extends Word {
     private String[] imperfectConjugations;
     private String[] futureConjugations;
     private String[] conditionalConjugations;
+    private Boolean[] isIrregular;
 
     public Verb(String word) {
         super(word);
@@ -24,5 +25,8 @@ public class Verb extends Word {
     }
     public String[] getConditionalConjugations() {
         return conditionalConjugations;
+    }
+    public Boolean[] getIsIrregular() {
+        return isIrregular;
     }
 }

@@ -15,6 +15,7 @@ public class Main {
         Scanner input = new Scanner(System.in);
 
         ListNames listName;
+        // Repeats asking which list to use until a valid one is named.
         while (true) {
             System.out.println("What list?");
             for (ListNames l : ListNames.values()) {
@@ -24,11 +25,14 @@ public class Main {
                 listName = ListNames.valueOf(toListEnumForm(input.nextLine()));
                 break;
             } catch (IllegalArgumentException e) {
+                System.out.println();
                 System.out.println("Invalid list, please try again");
+                System.out.println();
             }
         }
-        Tense tense;
 
+        Tense tense;
+        // Repeats asking which tense to use until a valid one is named
         while (true) {
             System.out.println("What tense?");
             for (Tense t : Tense.values()) {
@@ -38,17 +42,34 @@ public class Main {
                 tense = Tense.valueOf(input.nextLine().toUpperCase());
                 break;
             } catch (IllegalArgumentException e) {
+                System.out.println();
                 System.out.println("Invalid tense, please try again");
+                System.out.println();
             }
         }
 
+        // Assigns a number based on the tense, used for lists containing only regulars/irregulars of a certain tense.
+        int tenseNumber = switch (tense) {
+            case PRESENT -> 0;
+            case PRETERITE -> 1;
+            case IMPERFECT -> 2;
+            case FUTURE -> 3;
+            case CONDITIONAL -> 4;
+        };
+
+        // Gets the list of Verb objects to use, uses different JSON files based on the list chosen previously.
         List<Verb> verbList = configLoader.getVerbs(switch (listName) {
-            case COMMON20 -> "configFiles/verbsC20.json";
+            case COMMON20 -> new String[]{"configFiles/verbsC20.json"};
             case COMMON40 -> new String[]{"configFiles/verbsC20.json", "configFiles/verbsC40.json"};
             case COMMON60 -> new String[]{"configFiles/verbsC20.json", "configFiles/verbsC40.json", "configFiles/verbsC60.json"};
             case COMMON80 -> new String[]{"configFiles/verbsC20.json", "configFiles/verbsC40.json", "configFiles/verbsC60.json", "configFiles/verbsC80.json"};
             case COMMON100 -> new String[]{"configFiles/verbsC20.json", "configFiles/verbsC40.json", "configFiles/verbsC60.json", "configFiles/verbsC80.json", "configFiles/verbsC100.json"};
         });
+
+        // Choose whether to include regular verbs, irregular verbs, or both depending on the tense.
+        System.out.println("(EXPERIMENTAL) What to include?");
+        System.out.println("Regulars\nIrregulars\nBoth");
+        String include = input.nextLine();
 
         System.out.println("How many verbs?");
         int counter = input.nextInt();
@@ -57,7 +78,24 @@ public class Main {
         List<String[]> incorrect = new ArrayList<>();
         double score = 0;
         for (int j = 0; j < counter; j++) {
-            Verb verb = verbList.get((int)(Math.random() * verbList.size()));
+            Verb verb;
+            while (true) {
+                // Loops through, choosing verbs until one that matches the user's irregular/regular/both preference is chosen.
+                verb = verbList.get((int)(Math.random() * verbList.size()));
+                if (include.toUpperCase().contains("IR")) {
+                    if (verb.getIsIrregular()[tenseNumber]) {
+                        break;
+                    }
+                } else if (include.toUpperCase().contains("REG")) {
+                    if (!verb.getIsIrregular()[tenseNumber]) {
+                        break;
+                    }
+                } else {
+                    break;
+                }
+            }
+
+            // gets the pronoun, word, and correct answer for printing and input checking.
             String[] question = getQuestion(verb, tense);
             System.out.println(question[0] + " *" + question[1] + "* (" + tense + ")");
             if (input.nextLine().trim().equals(question[2])) {
@@ -76,6 +114,7 @@ public class Main {
                 Thread.sleep(3000);
             }
         }
+        // Allows the user to re-answer questions they got wrong before.
         if (!incorrect.isEmpty()) {
             System.out.println("Redo questions for half credit");
             for (String[] question : incorrect) {
@@ -94,7 +133,9 @@ public class Main {
                 Thread.sleep(1000);
             }
         }
-        System.out.println("Score: " + score + " out of " + counter);
+
+        // prints a score and a message based on it
+        System.out.println("Score: " + score + " out of " + counter + "! (" + Math.round(score*100/counter) + "%)");
         if (score > counter) {
             System.out.println("How did you get a higher score than the number of questions?");
         } else if (score == counter) {
@@ -118,11 +159,13 @@ public class Main {
         }
     }
 
+    // Converts a string to a form suitable for the ListNames enum
     private static String toListEnumForm(String s) {
         return s.substring(0, 6).toUpperCase() + s.substring(7);
     }
 
     public static String[] getQuestion(Verb verb, Tense tense) {
+        // Gets the form based on random numbers
         String[] singular = {"Él", "Ella", "Usted"};
         String[] plural = {"Ellos", "Ellas", "Ustedes"};
         int num = (int)(Math.random() * 6);
@@ -136,6 +179,8 @@ public class Main {
             default -> "Error";
         };
         String word = verb.getWord();
+
+        // Gets the correct conjugation based on the form and tense
         String answer = switch (tense) {
             case PRESENT -> verb.getPresentConjugations()[num];
             case PRETERITE -> verb.getPreteriteConjugations()[num];
