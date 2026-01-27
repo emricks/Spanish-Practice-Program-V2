@@ -1,6 +1,7 @@
 package com.enkycode.config;
 
 import com.enkycode.words.Verb;
+import com.enkycode.words.VocabWord;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -24,5 +25,18 @@ public class JSONConfigLoader implements ConfigLoader {
             }
         }
         return verbs;
+    }
+    public List<VocabWord> getVocabWords(String... filepath) {
+        Gson gson = new Gson();
+        List<VocabWord> vocabWords = new ArrayList<>();
+        for (String file : filepath) {
+            try (FileReader reader = new FileReader(file)) {
+                Type listType = new TypeToken<List<VocabWord>>(){}.getType();
+                vocabWords.addAll(gson.fromJson(reader, listType));
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        return vocabWords;
     }
 }

@@ -1,0 +1,102 @@
+[
+  {
+    "word": "de",
+    "validTranslations": ["of", "from"],
+    "englishDisplay": "of"
+  },
+  {
+    "word": "el",
+    "validTranslations": ["the"],
+    "englishDisplay": "the (masculine)"
+  },
+  {
+    "word": "que",
+    "validTranslations": ["that", "which", "who"],
+    "englishDisplay": "that (conjunction/pronoun)"
+  },
+  {
+    "word": "en",
+    "validTranslations": ["in", "on", "at"],
+    "englishDisplay": "in"
+  },
+  {
+    "word": "y",
+    "validTranslations": ["and"],
+    "englishDisplay": "and"
+  },
+  {
+    "word": "a",
+    "validTranslations": ["to", "at"],
+    "englishDisplay": "to"
+  },
+  {
+    "word": "un",
+    "validTranslations": ["a", "an", "one"],
+    "englishDisplay": "a"
+  },
+  {
+    "word": "por",
+    "validTranslations": ["for", "by", "through", "because of"],
+    "englishDisplay": "for"
+  },
+  {
+    "word": "con",
+    "validTranslations": ["with"],
+    "englishDisplay": "with"
+  },
+  {
+    "word": "no",
+    "validTranslations": ["no", "not"],
+    "englishDisplay": "no"
+  },
+  {
+    "word": "su",
+    "validTranslations": ["his", "her", "its", "your", "their"],
+    "englishDisplay": "his / her"
+  },
+  {
+    "word": "para",
+    "validTranslations": ["for", "in order"],
+    "englishDisplay": "in order to"
+  },
+  {
+    "word": "al",
+    "validTranslations": ["to the", "at the"],
+    "englishDisplay": "to the"
+  },
+  {
+    "word": "ser",
+    "validTranslations": ["be"],
+    "englishDisplay": "to be (essential or permanent)"
+  },
+  {
+    "word": "haber",
+    "validTranslations": ["have"],
+    "englishDisplay": "to have (done something)"
+  },
+  {
+    "word": "él",
+    "validTranslations": ["he", "him"],
+    "englishDisplay": "he"
+  },
+  {
+    "word": "lo",
+    "validTranslations": ["it", "him"],
+    "englishDisplay": "it"
+  },
+  {
+    "word": "mi",
+    "validTranslations": ["my"],
+    "englishDisplay": "my"
+  },
+  {
+    "word": "tener",
+    "validTranslations": ["have"],
+    "englishDisplay": "to have (possession)"
+  },
+  {
+    "word": "como",
+    "validTranslations": ["like", "as", "how"],
+    "englishDisplay": "like"
+  }
+]

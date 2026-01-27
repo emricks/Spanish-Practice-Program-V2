@@ -1,0 +1,102 @@
+[
+  {
+    "word": "estar",
+    "validTranslations": ["be"],
+    "englishDisplay": "to be (status/location)"
+  },
+  {
+    "word": "me",
+    "validTranslations": ["me", "myself"],
+    "englishDisplay": "me"
+  },
+  {
+    "word": "más",
+    "validTranslations": ["more", "most"],
+    "englishDisplay": "more"
+  },
+  {
+    "word": "este",
+    "validTranslations": ["this"],
+    "englishDisplay": "this"
+  },
+  {
+    "word": "le",
+    "validTranslations": ["him", "her"],
+    "englishDisplay": "him / her (indirect object)"
+  },
+  {
+    "word": "hacer",
+    "validTranslations": ["do", "make"],
+    "englishDisplay": "to do / to make"
+  },
+  {
+    "word": "se",
+    "validTranslations": ["self"],
+    "englishDisplay": "reflexive pronoun"
+  },
+  {
+    "word": "yo",
+    "validTranslations": ["I"],
+    "englishDisplay": "I"
+  },
+  {
+    "word": "pero",
+    "validTranslations": ["but"],
+    "englishDisplay": "but"
+  },
+  {
+    "word": "decir",
+    "validTranslations": ["say", "tell"],
+    "englishDisplay": "to say / to tell"
+  },
+  {
+    "word": "poder",
+    "validTranslations": ["able", "can"],
+    "englishDisplay": "can / to be able to"
+  },
+  {
+    "word": "ir",
+    "validTranslations": ["go"],
+    "englishDisplay": "to go"
+  },
+  {
+    "word": "ese",
+    "validTranslations": ["that"],
+    "englishDisplay": "that (masculine)"
+  },
+  {
+    "word": "otro",
+    "validTranslations": ["other"],
+    "englishDisplay": "another"
+  },
+  {
+    "word": "si",
+    "validTranslations": ["if", "whether"],
+    "englishDisplay": "if"
+  },
+  {
+    "word": "mi",
+    "validTranslations": ["my"],
+    "englishDisplay": "my"
+  },
+  {
+    "word": "ver",
+    "validTranslations": ["see"],
+    "englishDisplay": "to see"
+  },
+  {
+    "word": "ya",
+    "validTranslations": ["already", "now"],
+    "englishDisplay": "already"
+  },
+  {
+    "word": "porque",
+    "validTranslations": ["because"],
+    "englishDisplay": "because"
+  },
+  {
+    "word": "mucho",
+    "validTranslations": ["much", "lot", "many"],
+    "englishDisplay": "a lot / much"
+  }
+]
