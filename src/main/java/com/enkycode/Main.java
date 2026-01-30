@@ -1,5 +1,8 @@
 package com.enkycode;
 
+import com.enkycode.quiz.VerbsQuizRunner;
+import com.enkycode.quiz.VocabularyQuizRunner;
+
 import java.util.*;
 
 
@@ -8,10 +11,11 @@ public class Main {
         Scanner input = new Scanner(System.in);
         System.out.println("Please choose an activity.\nVerbs\nVocabulary");
         while (true) {
-            if (input.nextLine().toLowerCase().contains("vocab")) {
+            String choice = input.nextLine().toLowerCase();
+            if (choice.contains("vocab")) {
                 VocabularyQuizRunner.runQuiz();
                 break;
-            } else if (input.nextLine().toLowerCase().contains("verb")) {
+            } else if (choice.contains("verb")) {
                 VerbsQuizRunner.runQuiz();
                 break;
             } else {

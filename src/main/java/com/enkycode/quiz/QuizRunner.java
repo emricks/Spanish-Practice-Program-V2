@@ -1,7 +1,11 @@
-package com.enkycode;
+package com.enkycode.quiz;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class QuizRunner {
-    // there is no runQuiz method since it works differently for each child class.
+    static List<Integer> usedIndices = new ArrayList<>();
+    // there is no runQuiz method since it works differently for each class.
     static void printScoreMessage(int counter, double score) {
         System.out.println("Score: " + score + " out of " + counter + "! (" + Math.round(score*100/counter) + "%)");
         if (score > counter) {
@@ -24,6 +28,21 @@ public class QuizRunner {
             System.out.println("Congratulations! You're super good at being wrong!");
         } else {
             System.out.println("How did you do so badly that you got a negative score?");
+        }
+    }
+    static int getIndex(int len) {
+        int num;
+        while (true) {
+            num = (int) (Math.random() * len);
+            if (usedIndices.size() >= len) {
+                for (int i = 0; i < len/2; i++) {
+                    usedIndices.removeFirst();
+                }
+            }
+            if (!usedIndices.contains(num)) {
+                usedIndices.add(num);
+                return num;
+            }
         }
     }
 }

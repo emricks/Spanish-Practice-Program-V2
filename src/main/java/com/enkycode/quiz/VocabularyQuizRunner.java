@@ -1,7 +1,8 @@
-package com.enkycode;
+package com.enkycode.quiz;
 
 import com.enkycode.config.ConfigLoader;
 import com.enkycode.config.JSONConfigLoader;
+import com.enkycode.constants.VocabListNames;
 import com.enkycode.words.VocabWord;
 
 import java.util.ArrayList;
@@ -13,9 +14,29 @@ public class VocabularyQuizRunner extends QuizRunner {
         ConfigLoader configLoader = new JSONConfigLoader();
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Which vocabulary list?");
-        System.out.println("20 - 1-20 Most Common Words\n40 - 21-40 Most Common Words");
-        List<VocabWord> vocabWords = configLoader.getVocabWords("configFiles/vocabC"+input.nextLine()+".json");
+        VocabListNames listName;
+        // Repeats asking which list to use until a valid one is named.
+        while (true) {
+            System.out.println("What list?");
+            for (VocabListNames l : VocabListNames.values()) {
+                System.out.println(l.toSentenceForm());
+            }
+            try {
+                listName = VocabListNames.fromString(input.nextLine());
+                break;
+            } catch (IllegalArgumentException e) {
+                System.out.println();
+                System.out.println("Invalid list, please try again");
+                System.out.println();
+            }
+        }
+        List<VocabWord> vocabWords = configLoader.getVocabWords(switch (listName) {
+            case COMMON20 -> "configFiles/vocabC20.json";
+            case COMMON40 -> "configFiles/vocabC40.json";
+            case COMMON60 -> "configFiles/vocabC60.json";
+            case COMMON80 -> "configFiles/vocabC80.json";
+            case COMMON100 -> "configFiles/vocabC100.json";
+        });
 
         System.out.println("Which mode?");
         System.out.println("ES - English->Spanish");
@@ -30,7 +51,7 @@ public class VocabularyQuizRunner extends QuizRunner {
         double score = 0;
         if (mode.equalsIgnoreCase("ES")) {
             for (int j = 0; j < counter; j++) {
-                VocabWord vocab = vocabWords.get((int) (Math.random() * vocabWords.size()));
+                VocabWord vocab = vocabWords.get(getIndex(vocabWords.size()));
                 String word = vocab.getWord();
                 String englishDisplay = vocab.getEnglishDisplay();
                 System.out.println(englishDisplay + " (English -> Spanish)");
@@ -135,7 +156,6 @@ public class VocabularyQuizRunner extends QuizRunner {
             printScoreMessage(counter, score);
         }
     }
-
     private static boolean checkESAnswer(String userAnswer, String word) {
         return userAnswer.toLowerCase().trim().contains(word.toLowerCase());
     }

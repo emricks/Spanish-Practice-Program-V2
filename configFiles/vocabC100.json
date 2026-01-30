@@ -1,0 +1,102 @@
+[
+  {
+    "word": "primero",
+    "validTranslations": ["first"],
+    "englishDisplay": "first"
+  },
+  {
+    "word": "creer",
+    "validTranslations": ["believe", "think"],
+    "englishDisplay": "to believe"
+  },
+  {
+    "word": "donde",
+    "validTranslations": ["where"],
+    "englishDisplay": "where"
+  },
+  {
+    "word": "vida",
+    "validTranslations": ["life"],
+    "englishDisplay": "life"
+  },
+  {
+    "word": "dejar",
+    "validTranslations": ["leave", "let", "allow"],
+    "englishDisplay": "to leave (behind)"
+  },
+  {
+    "word": "nada",
+    "validTranslations": ["nothing"],
+    "englishDisplay": "nothing"
+  },
+  {
+    "word": "tanto",
+    "validTranslations": ["much", "many", "as"],
+    "englishDisplay": "so much"
+  },
+  {
+    "word": "parecer",
+    "validTranslations": ["seem", "appear"],
+    "englishDisplay": "to seem"
+  },
+  {
+    "word": "hablar",
+    "validTranslations": ["speak", "talk"],
+    "englishDisplay": "to speak"
+  },
+  {
+    "word": "poner",
+    "validTranslations": ["put", "place"],
+    "englishDisplay": "to put"
+  },
+  {
+    "word": "parte",
+    "validTranslations": ["part", "portion"],
+    "englishDisplay": "part"
+  },
+  {
+    "word": "eh",
+    "validTranslations": ["right"],
+    "englishDisplay": "right"
+  },
+  {
+    "word": "nuevo",
+    "validTranslations": ["new"],
+    "englishDisplay": "new"
+  },
+  {
+    "word": "solo",
+    "validTranslations": ["alone", "only"],
+    "englishDisplay": "alone"
+  },
+  {
+    "word": "siempre",
+    "validTranslations": ["always"],
+    "englishDisplay": "always"
+  },
+  {
+    "word": "hombre",
+    "validTranslations": ["man"],
+    "englishDisplay": "man"
+  },
+  {
+    "word": "bueno",
+    "validTranslations": ["good"],
+    "englishDisplay": "good"
+  },
+  {
+    "word": "seguir",
+    "validTranslations": ["follow", "continue"],
+    "englishDisplay": "to follow"
+  },
+  {
+    "word": "quedar",
+    "validTranslations": ["stay", "remain", "left"],
+    "englishDisplay": "to stay"
+  },
+  {
+    "word": "llevar",
+    "validTranslations": ["carry", "wear", "take"],
+    "englishDisplay": "to carry"
+  }
+]

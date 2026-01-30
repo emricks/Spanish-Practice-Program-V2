@@ -1,0 +1,102 @@
+[
+  {
+    "word": "dar",
+    "validTranslations": ["give"],
+    "englishDisplay": "to give"
+  },
+  {
+    "word": "muy",
+    "validTranslations": ["very"],
+    "englishDisplay": "very"
+  },
+  {
+    "word": "saber",
+    "validTranslations": ["know"],
+    "englishDisplay": "to know (facts or information)"
+  },
+  {
+    "word": "sí",
+    "validTranslations": ["yes"],
+    "englishDisplay": "yes"
+  },
+  {
+    "word": "año",
+    "validTranslations": ["year"],
+    "englishDisplay": "year"
+  },
+  {
+    "word": "ti",
+    "validTranslations": ["you"],
+    "englishDisplay": "you"
+  },
+  {
+    "word": "te",
+    "validTranslations": ["you", "yourself"],
+    "englishDisplay": "you"
+  },
+  {
+    "word": "también",
+    "validTranslations": ["also", "too"],
+    "englishDisplay": "also"
+  },
+  {
+    "word": "qué",
+    "validTranslations": ["what"],
+    "englishDisplay": "what"
+  },
+  {
+    "word": "alguno",
+    "validTranslations": ["some", "any"],
+    "englishDisplay": "some"
+  },
+  {
+    "word": "nos",
+    "validTranslations": ["us", "ourselves"],
+    "englishDisplay": "us"
+  },
+  {
+    "word": "tu",
+    "validTranslations": ["your"],
+    "englishDisplay": "your"
+  },
+  {
+    "word": "sin",
+    "validTranslations": ["without"],
+    "englishDisplay": "without"
+  },
+  {
+    "word": "mismo",
+    "validTranslations": ["same", "self"],
+    "englishDisplay": "same"
+  },
+  {
+    "word": "eso",
+    "validTranslations": ["that"],
+    "englishDisplay": "that"
+  },
+  {
+    "word": "cuando",
+    "validTranslations": ["when"],
+    "englishDisplay": "when"
+  },
+  {
+    "word": "querer",
+    "validTranslations": ["to want", "to love"],
+    "englishDisplay": "to want"
+  },
+  {
+    "word": "vez",
+    "validTranslations": ["time", "occasion"],
+    "englishDisplay": "time (occasion)"
+  },
+  {
+    "word": "hasta",
+    "validTranslations": ["until", "up to"],
+    "englishDisplay": "until"
+  },
+  {
+    "word": "lo",
+    "validTranslations": ["it", "him"],
+    "englishDisplay": "him"
+  }
+]

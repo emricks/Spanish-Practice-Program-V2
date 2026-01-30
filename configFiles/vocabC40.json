@@ -32,7 +32,7 @@
   {
     "word": "se",
     "validTranslations": ["self"],
-    "englishDisplay": "reflexive pronoun"
+    "englishDisplay": "oneself"
   },
   {
     "word": "yo",
@@ -86,7 +86,7 @@
   },
   {
     "word": "ya",
-    "validTranslations": ["already", "now"],
+    "validTranslations": ["already", "now", "still"],
     "englishDisplay": "already"
   },
   {

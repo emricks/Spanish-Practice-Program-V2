@@ -1,0 +1,102 @@
+[
+  {
+    "word": "sobre",
+    "validTranslations": ["on", "about", "over"],
+    "englishDisplay": "about"
+  },
+  {
+    "word": "entre",
+    "validTranslations": ["between", "among"],
+    "englishDisplay": "between"
+  },
+  {
+    "word": "dos",
+    "validTranslations": ["two"],
+    "englishDisplay": "two"
+  },
+  {
+    "word": "día",
+    "validTranslations": ["day"],
+    "englishDisplay": "day"
+  },
+  {
+    "word": "grande",
+    "validTranslations": ["big", "large", "great"],
+    "englishDisplay": "big"
+  },
+  {
+    "word": "así",
+    "validTranslations": ["so", "thus", "like this", "like that"],
+    "englishDisplay": "like this"
+  },
+  {
+    "word": "pasar",
+    "validTranslations": ["pass", "happen", "spend"],
+    "englishDisplay": "to pass"
+  },
+  {
+    "word": "cosa",
+    "validTranslations": ["thing"],
+    "englishDisplay": "thing"
+  },
+  {
+    "word": "desde",
+    "validTranslations": ["from", "since"],
+    "englishDisplay": "since / from"
+  },
+  {
+    "word": "deber",
+    "validTranslations": ["owe", "must", "should"],
+    "englishDisplay": "must / should"
+  },
+  {
+    "word": "ella",
+    "validTranslations": ["she", "her"],
+    "englishDisplay": "she"
+  },
+  {
+    "word": "pues",
+    "validTranslations": ["well", "then", "so"],
+    "englishDisplay": "well"
+  },
+  {
+    "word": "entonces",
+    "validTranslations": ["then", "so"],
+    "englishDisplay": "then"
+  },
+  {
+    "word": "llegar",
+    "validTranslations": ["arrive", "reach"],
+    "englishDisplay": "to arrive"
+  },
+  {
+    "word": "poco",
+    "validTranslations": ["little", "few"],
+    "englishDisplay": "little"
+  },
+  {
+    "word": "nuestro",
+    "validTranslations": ["our"],
+    "englishDisplay": "our"
+  },
+  {
+    "word": "bien",
+    "validTranslations": ["well", "good"],
+    "englishDisplay": "well"
+  },
+  {
+    "word": "ni",
+    "validTranslations": ["nor", "neither"],
+    "englishDisplay": "nor"
+  },
+  {
+    "word": "tiempo",
+    "validTranslations": ["time", "weather"],
+    "englishDisplay": "time"
+  },
+  {
+    "word": "ahora",
+    "validTranslations": ["now"],
+    "englishDisplay": "now"
+  }
+]

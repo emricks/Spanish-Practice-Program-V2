@@ -1,8 +1,8 @@
-package com.enkycode;
+package com.enkycode.quiz;
 
 import com.enkycode.config.ConfigLoader;
 import com.enkycode.config.JSONConfigLoader;
-import com.enkycode.constants.ListNames;
+import com.enkycode.constants.VerbsListNames;
 import com.enkycode.constants.Tense;
 import com.enkycode.words.Verb;
 
@@ -15,15 +15,15 @@ public class VerbsQuizRunner extends QuizRunner {
         ConfigLoader configLoader = new JSONConfigLoader();
         Scanner input = new Scanner(System.in);
 
-        ListNames listName;
+        VerbsListNames listName;
         // Repeats asking which list to use until a valid one is named.
         while (true) {
             System.out.println("What list?");
-            for (ListNames l : ListNames.values()) {
+            for (VerbsListNames l : VerbsListNames.values()) {
                 System.out.println(l.toSentenceForm());
             }
             try {
-                listName = ListNames.valueOf(toListEnumForm(input.nextLine()));
+                listName = VerbsListNames.fromString(input.nextLine());
                 break;
             } catch (IllegalArgumentException e) {
                 System.out.println();
@@ -73,7 +73,7 @@ public class VerbsQuizRunner extends QuizRunner {
             Verb verb;
             while (true) {
                 // Loops through, choosing verbs until one that matches the user's irregular/regular/both preference is chosen.
-                verb = verbList.get((int)(Math.random() * verbList.size()));
+                verb = verbList.get(getIndex(verbList.size()));
                 if (include.toUpperCase().contains("IR")) {
                     if (verb.getIsIrregular(tense)) {
                         break;
@@ -112,7 +112,7 @@ public class VerbsQuizRunner extends QuizRunner {
             Thread.sleep(2000);
             System.out.println();
             for (String[] question : incorrect) {
-                System.out.println(question[0] + " *" + question[1] + "* (" + tense + ")");
+                System.out.println(question[0] + " *" + question[1] + "* (" + tense.toSentenceCase() + ")");
                 if (input.nextLine().trim().equals(question[2])) {
                     score += 0.5;
                     System.out.println();
@@ -131,12 +131,6 @@ public class VerbsQuizRunner extends QuizRunner {
         // prints a score and a message based on it
         printScoreMessage(counter, score);
     }
-
-    // Converts a string to a form suitable for the ListNames enum
-    private static String toListEnumForm(String s) {
-        return s.substring(0, 6).toUpperCase() + s.substring(7);
-    }
-
     public static String[] getQuestion(Verb verb, Tense tense) {
         // Gets the form based on random numbers
         String[] singular = {"Él", "Ella", "Usted"};
