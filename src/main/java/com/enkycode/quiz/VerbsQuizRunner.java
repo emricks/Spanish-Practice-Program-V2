@@ -59,13 +59,12 @@ public class VerbsQuizRunner extends QuizRunner {
         });
 
         // Choose whether to include regular verbs, irregular verbs, or both depending on the tense.
-        System.out.println("(EXPERIMENTAL) What to include?");
+        System.out.println("Which to include?");
         System.out.println("Regulars\nIrregulars\nBoth");
-        String include = input.nextLine();
+        String str = input.nextLine().toLowerCase();
+        String include = str.contains("ir") ? "Irregulars" : (str.contains("reg") ? "Regulars" : "Both");
 
-        System.out.println("How many verbs?");
-        int counter = input.nextInt();
-        input.nextLine();
+        int counter = getCounter();
 
         List<String[]> incorrect = new ArrayList<>();
         double score = 0;

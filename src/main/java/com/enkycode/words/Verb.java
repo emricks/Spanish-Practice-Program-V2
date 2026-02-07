@@ -24,6 +24,7 @@ public class Verb extends Word {
     public String[] getFutureConjugations() {
         return futureConjugations.getConjugations();
     }
+    public Conjugation getFutureConjugation() {return futureConjugations;}
     public String[] getConditionalConjugations() {
         return conditionalConjugations.getConjugations();
     }

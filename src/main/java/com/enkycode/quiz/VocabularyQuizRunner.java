@@ -6,6 +6,7 @@ import com.enkycode.constants.VocabListNames;
 import com.enkycode.words.VocabWord;
 
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
@@ -41,11 +42,9 @@ public class VocabularyQuizRunner extends QuizRunner {
         System.out.println("Which mode?");
         System.out.println("ES - English->Spanish");
         System.out.println("SE - Spanish->English");
-        String mode = input.nextLine();
+        String mode = input.nextLine().toLowerCase().contains("es") ? "ES" : "SE";
 
-        System.out.println("How many words?");
-        int counter = input.nextInt();
-        input.nextLine();
+        int counter = getCounter();
 
         List<VocabWord> incorrect = new ArrayList<>();
         double score = 0;

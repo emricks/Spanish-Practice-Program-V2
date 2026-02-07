@@ -2,6 +2,7 @@ package com.enkycode.config;
 
 import com.enkycode.words.Verb;
 import com.enkycode.words.VocabWord;
+import com.enkycode.words.Word;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -12,7 +13,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class JSONConfigLoader implements ConfigLoader {
-
     public List<Verb> getVerbs(String... filepath) {
         Gson gson = new Gson();
         List<Verb> verbs = new ArrayList<>();

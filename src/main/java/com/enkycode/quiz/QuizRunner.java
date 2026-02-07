@@ -1,7 +1,9 @@
 package com.enkycode.quiz;
 
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.List;
+import java.util.Scanner;
 
 public class QuizRunner {
     static List<Integer> usedIndices = new ArrayList<>();
@@ -29,6 +31,23 @@ public class QuizRunner {
         } else {
             System.out.println("How did you do so badly that you got a negative score?");
         }
+    }
+    static int getCounter() {
+        Scanner input = new Scanner(System.in);
+        int counter;
+        while (true) {
+            try {
+                System.out.println("How many verbs?");
+                counter = input.nextInt();
+                break;
+            } catch (InputMismatchException e) {
+                System.out.println();
+                System.out.println("Invalid number, please try again");
+                System.out.println();
+            }
+        }
+        input.nextLine();
+        return counter;
     }
     static int getIndex(int len) {
         int num;
