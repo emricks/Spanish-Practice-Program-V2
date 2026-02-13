@@ -6,9 +6,9 @@ import java.util.List;
 import java.util.Scanner;
 
 public class QuizRunner {
-    static List<Integer> usedIndices = new ArrayList<>();
+    public static List<Integer> usedIndices = new ArrayList<>();
     // there is no runQuiz method since it works differently for each class.
-    static void printScoreMessage(int counter, double score) {
+    public static void printScoreMessage(int counter, double score) {
         System.out.println("Score: " + score + " out of " + counter + "! (" + Math.round(score*100/counter) + "%)");
         if (score > counter) {
             System.out.println("How did you get a higher score than the number of questions?");
@@ -32,7 +32,7 @@ public class QuizRunner {
             System.out.println("How did you do so badly that you got a negative score?");
         }
     }
-    static int getCounter() {
+    public static int getCounter() {
         Scanner input = new Scanner(System.in);
         int counter;
         while (true) {
@@ -49,7 +49,7 @@ public class QuizRunner {
         input.nextLine();
         return counter;
     }
-    static int getIndex(int len) {
+    public static int getIndex(int len) {
         int num;
         while (true) {
             num = (int) (Math.random() * len);
@@ -64,4 +64,6 @@ public class QuizRunner {
             }
         }
     }
+
+
 }

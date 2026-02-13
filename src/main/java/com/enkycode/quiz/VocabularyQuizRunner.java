@@ -6,7 +6,6 @@ import com.enkycode.constants.VocabListNames;
 import com.enkycode.words.VocabWord;
 
 import java.util.ArrayList;
-import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
@@ -31,13 +30,7 @@ public class VocabularyQuizRunner extends QuizRunner {
                 System.out.println();
             }
         }
-        List<VocabWord> vocabWords = configLoader.getVocabWords(switch (listName) {
-            case COMMON20 -> "configFiles/vocabC20.json";
-            case COMMON40 -> "configFiles/vocabC40.json";
-            case COMMON60 -> "configFiles/vocabC60.json";
-            case COMMON80 -> "configFiles/vocabC80.json";
-            case COMMON100 -> "configFiles/vocabC100.json";
-        });
+        List<VocabWord> vocabWords = configLoader.getVocabWords(listName);
 
         System.out.println("Which mode?");
         System.out.println("ES - English->Spanish");
@@ -103,7 +96,7 @@ public class VocabularyQuizRunner extends QuizRunner {
 
 
             for (int j = 0; j < counter; j++) {
-                VocabWord vocab = vocabWords.get((int) (Math.random() * vocabWords.size()));
+                VocabWord vocab = vocabWords.get(getIndex(vocabWords.size()));
                 String word = vocab.getWord();
                 String[] translations = vocab.getTranslations();
                 String englishDisplay = vocab.getEnglishDisplay();

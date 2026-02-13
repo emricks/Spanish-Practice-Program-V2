@@ -13,6 +13,6 @@ public enum VerbsListNames {
     }
 
     public static VerbsListNames fromString(String s) {
-        return VerbsListNames.valueOf("COMMON" + s);
+        return valueOf("COMMON" + s);
     }
 }

@@ -40,7 +40,7 @@ public class VerbsQuizRunner extends QuizRunner {
                 System.out.println(t.toSentenceCase());
             }
             try {
-                tense = Tense.valueOf(input.nextLine().toUpperCase());
+                tense = Tense.fromString(input.nextLine());
                 break;
             } catch (IllegalArgumentException e) {
                 System.out.println();
@@ -50,13 +50,7 @@ public class VerbsQuizRunner extends QuizRunner {
         }
 
         // Gets the list of Verb objects to use, uses different JSON files based on the list chosen previously.
-        List<Verb> verbList = configLoader.getVerbs(switch (listName) {
-            case COMMON20 -> new String[]{"configFiles/verbsC20.json"};
-            case COMMON40 -> new String[]{"configFiles/verbsC20.json", "configFiles/verbsC40.json"};
-            case COMMON60 -> new String[]{"configFiles/verbsC20.json", "configFiles/verbsC40.json", "configFiles/verbsC60.json"};
-            case COMMON80 -> new String[]{"configFiles/verbsC20.json", "configFiles/verbsC40.json", "configFiles/verbsC60.json", "configFiles/verbsC80.json"};
-            case COMMON100 -> new String[]{"configFiles/verbsC20.json", "configFiles/verbsC40.json", "configFiles/verbsC60.json", "configFiles/verbsC80.json", "configFiles/verbsC100.json"};
-        });
+        List<Verb> verbList = configLoader.getVerbs(listName);
 
         // Choose whether to include regular verbs, irregular verbs, or both depending on the tense.
         System.out.println("Which to include?");
@@ -153,6 +147,7 @@ public class VerbsQuizRunner extends QuizRunner {
             case IMPERFECT -> verb.getImperfectConjugations()[num];
             case FUTURE -> verb.getFutureConjugations()[num];
             case CONDITIONAL -> verb.getConditionalConjugations()[num];
+            case PRESENT_PERFECT ->  verb.getPresentPerfectConjugations()[num];
         };
         return new String[]{form, word, answer};
     }

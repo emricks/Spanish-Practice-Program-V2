@@ -12,6 +12,6 @@ public enum VocabListNames {
         return num + " - " + (num-19) + "-" + num + " Most Common Words";
     }
     public static VocabListNames fromString(String s) {
-        return VocabListNames.valueOf("COMMON" + s);
+        return valueOf("COMMON" + s);
     }
 }
