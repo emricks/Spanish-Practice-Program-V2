@@ -8,7 +8,6 @@ public class Verb extends Word {
     private Conjugation imperfectConjugations;
     private Conjugation futureConjugations;
     private Conjugation conditionalConjugations;
-    private Conjugation presentPerfectConjugations;
 
     public Verb(String word) {
         super(word);
@@ -28,9 +27,6 @@ public class Verb extends Word {
     public String[] getConditionalConjugations() {
         return conditionalConjugations.getConjugations();
     }
-    public String[] getPresentPerfectConjugations() {
-        return presentPerfectConjugations.getConjugations();
-    }
     public boolean getIsIrregular(Tense tense) {
         return switch (tense) {
             case PRESENT -> presentConjugations.getIsIrregular();
@@ -38,7 +34,6 @@ public class Verb extends Word {
             case IMPERFECT -> imperfectConjugations.getIsIrregular();
             case FUTURE -> futureConjugations.getIsIrregular();
             case CONDITIONAL -> conditionalConjugations.getIsIrregular();
-            case PRESENT_PERFECT ->  presentPerfectConjugations.getIsIrregular();
         };
     }
 }

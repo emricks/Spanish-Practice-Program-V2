@@ -122,7 +122,15 @@ public class VerbsQuizRunner extends QuizRunner {
         }
 
         // prints a score and a message based on it
-        printScoreMessage(counter, score);
+        double accuracy = score/counter;
+        switch(tense) {
+            case PRESENT -> JSONConfigLoader.stats.updatePresent(score, accuracy);
+            case PRETERITE -> JSONConfigLoader.stats.updatePreterite(score, accuracy);
+            case IMPERFECT ->  JSONConfigLoader.stats.updateImperfect(score, accuracy);
+            case FUTURE ->  JSONConfigLoader.stats.updateFuture(score, accuracy);
+            case CONDITIONAL ->   JSONConfigLoader.stats.updateConditional(score, accuracy);
+        }
+        printScoreMessage(accuracy, score);
     }
     public static String[] getQuestion(Verb verb, Tense tense) {
         // Gets the form based on random numbers
@@ -147,7 +155,6 @@ public class VerbsQuizRunner extends QuizRunner {
             case IMPERFECT -> verb.getImperfectConjugations()[num];
             case FUTURE -> verb.getFutureConjugations()[num];
             case CONDITIONAL -> verb.getConditionalConjugations()[num];
-            case PRESENT_PERFECT ->  verb.getPresentPerfectConjugations()[num];
         };
         return new String[]{form, word, answer};
     }

@@ -8,13 +8,13 @@ public class TenseTest {
     public void testToSentenceCase() {
         Assertions.assertEquals("Preterite", Tense.PRETERITE.toSentenceCase());
         Assertions.assertEquals("Future", Tense.FUTURE.toSentenceCase());
-        Assertions.assertEquals("Present Perfect", Tense.PRESENT_PERFECT.toSentenceCase());
+        Assertions.assertEquals("Present", Tense.PRESENT.toSentenceCase());
     }
 
     @Test
     public void testFromString() {
-        Assertions.assertEquals(Tense.PRETERITE, Tense.fromString("Preterite"));
-        Assertions.assertEquals(Tense.FUTURE, Tense.fromString("Future"));
-        Assertions.assertEquals(Tense.PRESENT_PERFECT, Tense.fromString("present pErFEct"));
+        Assertions.assertEquals(Tense.PRETERITE, Tense.fromString("PRETERITE"));
+        Assertions.assertEquals(Tense.FUTURE, Tense.fromString("future"));
+        Assertions.assertEquals(Tense.PRESENT, Tense.fromString("PrESeNt"));
     }
 }

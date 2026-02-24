@@ -2,18 +2,27 @@ package com.enkycode.config;
 
 import com.enkycode.constants.VerbsListNames;
 import com.enkycode.constants.VocabListNames;
+import com.enkycode.stats.*;
 import com.enkycode.words.Verb;
 import com.enkycode.words.VocabWord;
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.Writer;
 import java.lang.reflect.Type;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
 public class JSONConfigLoader implements ConfigLoader {
+    private static final Gson gson = new GsonBuilder().setPrettyPrinting().create();
+    public static VerbStats stats = new VerbStats();
+    public static final DefaultStats defaultStats = new DefaultStats();
+
     @Override
     public List<Verb> getVerbs(VerbsListNames vln) {
         String[] files = switch (vln) {
@@ -26,7 +35,6 @@ public class JSONConfigLoader implements ConfigLoader {
         return loadVerbs(files);
     }
     private List<Verb> loadVerbs(String... filepath) {
-        Gson gson = new Gson();
         List<Verb> verbs = new ArrayList<>();
         for (String file : filepath) {
             try (FileReader reader = new FileReader(file)) {
@@ -48,9 +56,7 @@ public class JSONConfigLoader implements ConfigLoader {
         };
         return loadVocabWords(file);
     }
-
-    public List<VocabWord> loadVocabWords(String... filepath) {
-        Gson gson = new Gson();
+    private List<VocabWord> loadVocabWords(String... filepath) {
         List<VocabWord> vocabWords = new ArrayList<>();
         for (String file : filepath) {
             try (FileReader reader = new FileReader(file)) {
@@ -61,5 +67,27 @@ public class JSONConfigLoader implements ConfigLoader {
             }
         }
         return vocabWords;
+    }
+
+    public static void statsToJson() {
+        try (Writer writer = new FileWriter("configFiles/verbStats.json", StandardCharsets.UTF_8)) {
+            gson.toJson(stats, writer);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    public static void resetStats() {
+        try (Writer writer = new FileWriter("configFiles/verbStats.json", StandardCharsets.UTF_8)) {
+            gson.toJson(defaultStats, writer);
+        }  catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    public static void loadStats() {
+        try (FileReader reader = new FileReader("configFiles/verbStats.json")) {
+            stats = gson.fromJson(reader, VerbStats.class);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

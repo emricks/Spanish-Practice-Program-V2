@@ -5,8 +5,7 @@ public enum Tense {
     PRETERITE,
     IMPERFECT,
     FUTURE,
-    CONDITIONAL,
-    PRESENT_PERFECT;
+    CONDITIONAL;
 
     public String toSentenceCase() {
         if (name().contains("_")) {

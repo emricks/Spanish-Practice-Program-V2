@@ -14,11 +14,11 @@ public class QuizRunnerTest {
     @Test
     @DisplayName("Testing printScoreMessage prints correctly")
     public void testPrintScoreMessage() throws Exception {
-        String output = SystemLambda.tapSystemOut(() -> QuizRunner.printScoreMessage(50, 45));
+        String output = SystemLambda.tapSystemOut(() -> QuizRunner.printScoreMessage(0.9, 45));
         Assertions.assertEquals("Score: 45.0 out of 50! (90%)\nGreat job!\n", output);
-        output = SystemLambda.tapSystemOut(() -> QuizRunner.printScoreMessage(20, 11));
+        output = SystemLambda.tapSystemOut(() -> QuizRunner.printScoreMessage(0.55, 11));
         Assertions.assertEquals("Score: 11.0 out of 20! (55%)\nLearn this tense, or try practicing a different tense!\n", output);
-        output = SystemLambda.tapSystemOut(() -> QuizRunner.printScoreMessage(1000, 694.5));
+        output = SystemLambda.tapSystemOut(() -> QuizRunner.printScoreMessage(0.6945, 694.5));
         Assertions.assertEquals("Score: 694.5 out of 1000! (69%)\nKeep practicing!\n", output);
     }
 
